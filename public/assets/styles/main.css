@@ -324,6 +324,13 @@ body {
     margin-right: 10px;
 }
 
+#chat {
+    width: 25px;
+    height: 25px;
+    filter: brightness(100) invert(1) drop-shadow(0 0 10px rgba(0, 153, 255, 0.8));
+    margin: auto;
+    margin-right: 10px;
+}
 
 #controller {
     width: 30px;
@@ -437,6 +444,7 @@ body {
     height: auto;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 10px;
 }
 
 #time {
@@ -545,4 +553,44 @@ body {
 
 #blooket {
     margin-top: -20px;
+}
+
+#random {
+    width: 1200px;
+    height: 75px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 40px;
+    color: var(--font);
+    font-family: "font";
+    background-color: var(--primary);
+    box-shadow: #0099ff 0px 0px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin: 0 auto;
+    display: block;
+    margin-top: -60px;
+}
+
+#random:hover {
+    background-color: rgb(255, 255, 255);
+    color: var(--primary);
+
+}
+
+#chatframe {
+    width: 90%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -10000;
+    background-color: var(--primary);
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+    margin-top: -50px;
+    border-radius: 20px;
+    box-shadow: #0099ff 0px 0px 20px;
 }

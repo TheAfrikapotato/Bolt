@@ -7,17 +7,15 @@
   <title>Home</title>
   <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/classroom/favicon.png" />
   <link rel="stylesheet" href="/assets/styles/main.css" />
-
   <script src="/baremux/index.js"></script>
   <script src="/epoxy/index.js"></script>
   <script src="/uv/uv.bundle.js"></script>
   <script src="/uv/uv.config.js"></script>
   <link rel="prefetch" href="/scram/scramjet.worker.js" />
   <link rel="prefetch" href="/scram/scramjet.shared.js" />
-  <script src="/sw.js"></script>
   <script src="/assets/js/main.js"></script>
+  <script src="/sw.js"></script>
   <script src="https://unpkg.com/@rubynetwork/rammerhead-browser" defer></script>
-
 </head>
 
 <body>
@@ -41,7 +39,6 @@
     <a id="link" href="/games.html">
       <img id="controller" src="https://iconape.com/wp-content/png_logo_vector/gamepad.png">Games
     </a>
-
     <a id="link" href="/chat.html">
       <img id="chat" src="https://static.thenounproject.com/png/23598-200.png"> Chat
     </a>
@@ -49,30 +46,17 @@
       <img id="cog" src="https://static-00.iconduck.com/assets.00/settings-icon-1964x2048-8nigtrtt.png"> Settings
     </a>
   </div>
-  <div class="title">
-    <h1 id="title">Bolt</h1>
-  </div>
-  <form id="form">
-    <input id="input" placeholder="Search the Web Freely..." />
-  </form>
-  <div id="extras">
-    <h1 class="etext" id="discord">Join the Discord Server!</h1>
-  </div>
-  <script>
-    document.getElementById("extras").addEventListener("mouseover", function () {
-      document.getElementById("discord").textContent = "https://discord.gg/cvXD5nDBAW";
-    });
-    document.getElementById("extras").addEventListener("mouseout", function () {
-      document.getElementById("discord").textContent = "Join the Discord Server!";
-    });
-  </script>
 
-  <script src="/scram/scramjet.controller.js"></script>
-  <script src="/assets/js/main.js"></script>
+  <div class="appTitle">
+    <h1 id="appTitle">Chat</h1>
+  </div>
+
+  <div class="chat">
+    <iframe id="chatframe" src="" frameborder="0"></iframe>
+  </div>
+
   <script src="/assets/js/time.js"></script>
-  <script>
-
-  </script>
+  <script src="/assets/js/chat.js"></script>
 </body>
 
 </html>
