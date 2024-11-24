@@ -30,6 +30,7 @@ app.use((req, res) => {
 server.on("request", (req, res) => {
     res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
     res.setHeader("Cross-Origin-Embedder-Policy", "anonymous");
+    app(req, res);
 });
 
 server.on("upgrade", (req, socket, head) => {
