@@ -8,7 +8,6 @@ import { hostname } from "node:os";
 import wisp from "wisp-server-node";
 import rammerhead from '@rubynetwork/rammerhead';
 import { createRammerhead, shouldRouteRh, routeRhUpgrade, routeRhRequest } from '@rubynetwork/rammerhead';
-import { meteorPath } from 'meteorproxy'
 
 
 const __dirname = process.cwd();
@@ -20,7 +19,6 @@ app.use(express.static(publicPath));
 app.use("/uv/", express.static(uvPath));
 app.use("/epoxy/", express.static(epoxyPath));
 app.use("/baremux/", express.static(baremuxPath));
-app.use("/meteor/", express.static(meteorPath));
 
 const server = createServer();
 const rh = createRammerhead({
