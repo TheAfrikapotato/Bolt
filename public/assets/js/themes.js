@@ -38,7 +38,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
     else if (localStorage.getItem("theme") == "default") {
         if (localStorage.getItem("custombg") == 'false') {
-            document.getElementById("bg").setAttribute("src", "");
+            document.getElementById("bg").setAttribute("src", "data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%3E%3C/svg%3E");
         }
         document.getElementById("theme").setAttribute("href", "/assets/styles/main.css");
     }
