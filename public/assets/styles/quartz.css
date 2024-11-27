@@ -1,8 +1,8 @@
 * {
-    --primary: rgb(0, 0, 0);
-    --secondary: rgb(255, 255, 255);
-    --font: rgb(255, 255, 255);
-    --accent: rgb(0, 153, 255);
+    --primary: rgb(255, 255, 255);
+    --secondary: rgb(198, 198, 198);
+    --font: rgb(138, 138, 138);
+    --accent: rgb(161, 161, 161);
 }
 
 @font-face {
