@@ -1,8 +1,7 @@
 * {
-    --primary: rgb(0, 0, 0);
-    --secondary: rgb(255, 255, 255);
-    --font: rgb(255, 255, 255);
-    --accent: rgb(0, 153, 255);
+    --primary: #000000;
+    --secondary: #ffffff;
+    --font: #ffffff;
 }
 
 @font-face {
@@ -10,15 +9,6 @@
     /*a name to be used later*/
     src: url("../fonts/font.otf");
     /*URL to font*/
-}
-
-#bg {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -101;
 }
 
 #particles-js {
@@ -36,21 +26,21 @@ body {
 }
 
 .title {
-    color: var(--accent);
+    color: rgb(0, 149, 255);
     margin: auto;
     text-align: center;
     font-size: 70px;
-    text-shadow: 0 0 50px var(--accent);
+    text-shadow: 0 0 50px rgb(0, 162, 255);
     height: 200px;
     margin-top: -20px;
 }
 
 .appTitle {
-    color: var(--accent);
+    color: rgb(0, 149, 255);
     margin: auto;
     text-align: center;
     font-size: 50px;
-    text-shadow: 0 0 50px var(--accent);
+    text-shadow: 0 0 50px rgb(0, 162, 255);
     height: 200px;
     margin-top: -20px;
 }
@@ -73,7 +63,7 @@ body {
 }
 
 #input:focus {
-    box-shadow: 0 0 50px var(--accent);
+    box-shadow: 0 0 50px rgb(0, 162, 255);
 }
 
 #frame {
@@ -91,12 +81,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -10000;
-    text-shadow: 0 0 40px var(--accent);
+    text-shadow: 0 0 40px rgb(0, 153, 255);
 
 }
 
 #loading {
-    color: var(--accent);
+    color: rgb(0, 153, 255);
     font-size: 100px;
     z-index: -10000;
 }
@@ -105,9 +95,9 @@ body {
     width: 750px;
     height: 100px;
     background-color: var(--primary);
-    color: var(--accent);
-    text-shadow: 0 0 40px var(--accent);
-    box-shadow: 0 0 40px var(--accent);
+    color: rgb(0, 153, 255);
+    text-shadow: 0 0 40px rgb(0, 153, 255);
+    box-shadow: 0 0 40px rgb(0, 153, 255);
     margin: auto;
     text-align: center;
     font-size: 20px;
@@ -121,13 +111,13 @@ body {
 }
 
 #extras:hover {
-    text-shadow: 0 0 70px var(--secondary);
-    box-shadow: 0 0 50px var(--secondary);
-    color: var(--secondary);
+    text-shadow: 0 0 70px rgb(255, 255, 255);
+    box-shadow: 0 0 50px rgb(255, 255, 255);
+    color: white;
 }
 
 .bar {
-    background-color: var(--primary);
+    background-color: #262626;
     position: fixed;
     top: 0;
     left: 0;
@@ -136,9 +126,9 @@ body {
 }
 
 #logo {
-    color: var(--accent);
+    color: rgb(0, 162, 255);
     font-size: 35px;
-    text-shadow: 0 0 10px var(--accent);
+    text-shadow: 0 0 10px rgb(0, 153, 255);
     margin-top: 0px;
     margin-left: 5px;
     text-decoration: none;
@@ -146,7 +136,7 @@ body {
 }
 
 .controls {
-    background-color: var(--primary);
+    background-color: #000000;
     position: fixed;
     top: 40px;
     left: 0;
@@ -155,8 +145,8 @@ body {
 }
 
 #firsttab {
-    background-color: var(--primary);
-    color: var(--secondary);
+    background-color: #000000;
+    color: white;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -169,7 +159,7 @@ body {
 }
 
 #ftabtxt {
-    color: var(--secondary);
+    color: rgb(255, 255, 255);
     font-size: 20px;
     margin-top: 3px;
     text-overflow: ellipsis;
@@ -177,8 +167,8 @@ body {
 
 #tab {
     display: flex;
-    background-color: var(--primary);
-    color: var(--secondary);
+    background-color: #000000;
+    color: white;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -190,7 +180,7 @@ body {
 }
 
 #tabTxt {
-    color: var(--secondary);
+    color: rgb(255, 255, 255);
     font-size: 20px;
     margin-top: 3px;
     text-overflow: ellipsis;
@@ -198,18 +188,18 @@ body {
 
 
 #logo:hover {
-    color: var(--secondary);
-    text-shadow: 0 0 10px var(--secondary);
+    color: #ffffff;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 #newTabButton {
-    background-color: var(--primary);
+    background-color: #000000;
     margin-top: -35px;
     margin-left: 193vh;
     width: 30px;
     height: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 10px var(--accent);
+    box-shadow: 0 0 10px rgb(0, 153, 255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -219,7 +209,7 @@ body {
 
 #newTab {
     font-size: 30px;
-    color: var(--secondary);
+    color: #ffffff;
     text-decoration: none;
     user-select: none;
     cursor: pointer;
@@ -228,7 +218,7 @@ body {
 }
 
 #newTabButton:hover {
-    box-shadow: 0 0 10px var(--secondary);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .tabs {
@@ -246,7 +236,7 @@ body {
 #x {
     position: absolute;
     font-size: 20px;
-    color: var(--secondary);
+    color: #ffffff;
     text-decoration: none;
     user-select: none;
     cursor: pointer;
@@ -256,35 +246,35 @@ body {
 }
 
 #x:hover {
-    color: var(--accent);
-    text-shadow: 0 0 10px var(--secondary);
+    color: #0099ff;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 #tab.active {
-    background-color: var(--secondary);
-    color: var(--primary);
+    background-color: #ffffff;
+    color: #000000;
 }
 
 #tab.active #tabTxt {
-    color: var(--primary);
+    color: #000000;
 }
 
 #tab.active #x {
-    color: var(--primary);
+    color: #000000;
 }
 
 #firsttab.active {
-    background-color: var(--secondary);
-    color: var(--primary);
+    background-color: #ffffff;
+    color: #000000;
 }
 
 #firsttab.active #ftabtxt {
-    color: var(--primary);
+    color: #000000;
 }
 
 .nav {
     background-color: var(--primary);
-    box-shadow: var(--accent) 0px 0px 50px;
+    box-shadow: #0099ff 0px 0px 50px;
     border-radius: 20px;
     height: 80px;
     align-items: center;
@@ -295,8 +285,8 @@ body {
 }
 
 #home {
-    color: var(--accent);
-    text-shadow: var(--accent) 0px 0px 10px;
+    color: #0099ff;
+    text-shadow: #0099ff 0px 0px 10px;
     font-size: 60px;
     cursor: pointer;
     transition: all 0.15s ease-in-out;
@@ -306,8 +296,8 @@ body {
 }
 
 #home:hover {
-    color: var(--secondary);
-    text-shadow: var(--secondary) 0px 0px 10px;
+    color: #ffffff;
+    text-shadow: #ffffff 0px 0px 10px;
 }
 
 #link {
@@ -322,14 +312,14 @@ body {
 }
 
 #link:hover {
-    color: var(--accent);
-    text-shadow: var(--accent) 0px 0px 10px;
+    color: #0099ff;
+    text-shadow: #0099ff 0px 0px 10px;
 }
 
 #cog {
     width: 20px;
     height: 20px;
-    filter: brightness(100) drop-shadow(0 0 10px var(--accent));
+    filter: brightness(100) drop-shadow(0 0 10px rgba(0, 153, 255, 0.8));
     margin: auto;
     margin-right: 10px;
 }
@@ -337,7 +327,7 @@ body {
 #chat {
     width: 25px;
     height: 25px;
-    filter: brightness(100) invert(1) drop-shadow(0 0 10px var(--accent));
+    filter: brightness(100) invert(1) drop-shadow(0 0 10px rgba(0, 153, 255, 0.8));
     margin: auto;
     margin-right: 10px;
 }
@@ -345,7 +335,7 @@ body {
 #controller {
     width: 30px;
     height: 30px;
-    filter: brightness(0) invert(1) drop-shadow(0 0 10px var(--accent));
+    filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(0, 153, 255, 0.8));
     margin: auto;
     margin-right: 10px;
 }
@@ -353,7 +343,7 @@ body {
 #texting {
     width: 25px;
     height: 25px;
-    filter: brightness(0) invert(1) drop-shadow(0 0 10px var(--accent));
+    filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(0, 153, 255, 0.8));
     margin: auto;
     margin-right: 10px;
 }
@@ -370,7 +360,7 @@ body {
 
 .app {
     background-color: var(--primary);
-    box-shadow: 0 0 30px var(--accent);
+    box-shadow: 0 0 30px rgba(0, 153, 255, 0.8);
     border-radius: 20px;
     color: var(--secondary);
     width: 200px;
@@ -385,7 +375,7 @@ body {
 .app:hover {
     background-color: var(--secondary);
     color: var(--primary);
-    box-shadow: 0 0 30px var(--secondary);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
 }
 
 .app img {
@@ -414,7 +404,7 @@ body {
 
 .game {
     background-color: var(--primary);
-    box-shadow: 0 0 30px var(--accent);
+    box-shadow: 0 0 30px rgba(0, 153, 255, 0.8);
     border-radius: 20px;
     color: var(--secondary);
     width: 200px;
@@ -429,7 +419,7 @@ body {
 .game:hover {
     background-color: var(--secondary);
     color: var(--primary);
-    box-shadow: 0 0 30px var(--secondary);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
 }
 
 .game img {
@@ -474,7 +464,7 @@ body {
 
 .settings-item {
     background-color: var(--primary);
-    box-shadow: 0 0 30px var(--accent);
+    box-shadow: 0 0 30px rgba(0, 153, 255, 0.8);
     border-radius: 20px;
     color: var(--secondary);
     width: 300px;
@@ -534,9 +524,9 @@ body {
 }
 
 #ab:hover {
-    background-color: var(--accent);
+    background-color: rgba(0, 166, 255);
     color: var(--primary);
-    box-shadow: 0 0 30px var(--accent);
+    box-shadow: 0 0 30px rgba(0, 166, 255, 0.8);
 }
 
 .button {
@@ -556,9 +546,9 @@ body {
 }
 
 .button:hover {
-    background-color: var(--accent);
+    background-color: rgba(0, 166, 255);
     color: var(--primary);
-    box-shadow: 0 0 30px var(--accent);
+    box-shadow: 0 0 30px rgba(0, 166, 255, 0.8);
 }
 
 #blooket {
@@ -576,7 +566,7 @@ body {
     color: var(--font);
     font-family: "font";
     background-color: var(--primary);
-    box-shadow: var(--accent) 0px 0px 20px;
+    box-shadow: #0099ff 0px 0px 20px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     margin: 0 auto;
@@ -585,7 +575,7 @@ body {
 }
 
 #random:hover {
-    background-color: var(--secondary);
+    background-color: rgb(255, 255, 255);
     color: var(--primary);
 
 }
@@ -602,5 +592,5 @@ body {
     display: block;
     margin-top: -50px;
     border-radius: 20px;
-    box-shadow: var(--accent) 0px 0px 20px;
+    box-shadow: #0099ff 0px 0px 20px;
 }
