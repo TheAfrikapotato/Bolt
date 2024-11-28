@@ -3,6 +3,53 @@ var wispSelect = document.getElementById("wisp-select");
 var ab = document.getElementById("ab");
 var blooket = document.getElementById("blooket");
 var gimkit = document.getElementById("gimkit");
+var tab = 0;
+var ptab = document.getElementById("ptab");
+var ttab = document.getElementById("ttab");
+var etab = document.getElementById("etab");
+var themeselect = document.getElementById("theme-select");
+
+if (ptab && ttab && etab) {
+  checkTabs();
+  ptab.addEventListener("click", function () {
+    tab = 0;
+    checkTabs();
+  });
+  ttab.addEventListener("click", function () {
+    tab = 1;
+    checkTabs();
+  });
+  etab.addEventListener("click", function () {
+    tab = 2;
+    checkTabs();
+  });
+
+  function checkTabs() {
+    proxy.hidden = true;
+    wisp.hidden = true;
+    cloaking.hidden = true;
+    cheats.hidden = true;
+    themes.hidden = true;
+    if (tab == 0) {
+      ptab.classList.add("active");
+      ttab.classList.remove("active");
+      etab.classList.remove("active");
+      proxy.hidden = false;
+      wisp.hidden = false;
+    } else if (tab == 1) {
+      ttab.classList.add("active");
+      ptab.classList.remove("active");
+      etab.classList.remove("active");
+      themes.hidden = false;
+    } else if (tab == 2) {
+      etab.classList.add("active");
+      ptab.classList.remove("active");
+      ttab.classList.remove("active");
+      cheats.hidden = false;
+      cloaking.hidden = false;
+    }
+  }
+}
 
 if (proxySelect) {
   proxySelect.value = localStorage.getItem("proxy") || "uv";
@@ -80,5 +127,13 @@ if (gimkit) {
     } catch (err) {
       alert("Failed to copy cheats");
     }
+  });
+}
+
+if (themeselect) {
+  themeselect.value = localStorage.getItem("theme") || "default";
+  themeselect.addEventListener("change", function () {
+    localStorage.setItem("theme", themeselect.value);
+    location.reload();
   });
 }
