@@ -42,4 +42,7 @@ window.addEventListener("DOMContentLoaded", function () {
         }
         document.documentElement.style.cssText = "    --primary: rgb(0, 0, 0);--secondary: rgb(255, 255, 255);--font: rgb(255, 255, 255);--accent: rgb(0, 153, 255); ";
     }
+    if (localStorage.getItem("custombg") != '') {
+        document.getElementById("bg").setAttribute("src", localStorage.getItem("custombg"));
+    }
 })

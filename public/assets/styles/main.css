@@ -485,6 +485,11 @@ body {
     text-align: center;
 }
 
+#cbg {
+    display: flex;
+    flex-direction: column;
+}
+
 #proxy-select {
     width: 200px;
     height: 75px;
@@ -497,6 +502,11 @@ body {
     font-family: "font";
     background-color: var(--secondary);
     cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+#proxy-select:hover {
+    box-shadow: var(--accent) 0px 0px 20px;
 }
 
 #wisp-select {
@@ -511,8 +521,12 @@ body {
     font-family: "font";
     background-color: var(--secondary);
     cursor: pointer;
+    transition: all 0.2s ease-out;
 }
 
+#wisp-select:hover {
+    box-shadow: var(--accent) 0px 0px 20px;
+}
 
 #theme-select {
     width: 200px;
@@ -526,6 +540,62 @@ body {
     font-family: "font";
     background-color: var(--secondary);
     cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+#theme-select:hover {
+    box-shadow: var(--accent) 0px 0px 20px;
+}
+
+.bg {
+    display: flex;
+    flex-direction: column;
+}
+
+#bgtitle {
+    color: var(--font);
+    font-size: 40px;
+    margin-top: -20px;
+}
+
+#bginput {
+    width: 200px;
+    height: 75px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 15px;
+    color: var(--primary);
+    font-family: "font";
+    background-color: var(--secondary);
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+#bginput:hover {
+    box-shadow: var(--accent) 0px 0px 20px;
+}
+
+#bgset {
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 15px;
+    color: var(--primary);
+    font-family: "font";
+    background-color: var(--secondary);
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+#bgset:hover {
+    box-shadow: var(--accent) 0px 0px 20px;
+    background-color: var(--accent);
 }
 
 #proxytitle {

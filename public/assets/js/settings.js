@@ -8,6 +8,8 @@ var ptab = document.getElementById("ptab");
 var ttab = document.getElementById("ttab");
 var etab = document.getElementById("etab");
 var themeselect = document.getElementById("theme-select");
+var bginput = document.getElementById("bginput");
+var bgset = document.getElementById("bgset");
 
 if (ptab && ttab && etab) {
   checkTabs();
@@ -30,6 +32,7 @@ if (ptab && ttab && etab) {
     cloaking.hidden = true;
     cheats.hidden = true;
     themes.hidden = true;
+    cbg.style.display = "none";
     if (tab == 0) {
       ptab.classList.add("active");
       ttab.classList.remove("active");
@@ -41,6 +44,7 @@ if (ptab && ttab && etab) {
       ptab.classList.remove("active");
       etab.classList.remove("active");
       themes.hidden = false;
+      cbg.style.display = "flex";
     } else if (tab == 2) {
       etab.classList.add("active");
       ptab.classList.remove("active");
@@ -134,6 +138,14 @@ if (themeselect) {
   themeselect.value = localStorage.getItem("theme") || "default";
   themeselect.addEventListener("change", function () {
     localStorage.setItem("theme", themeselect.value);
+    location.reload();
+  });
+}
+
+if (bginput && bgset) {
+  bginput.value = localStorage.getItem("custombg") || "";
+  bgset.addEventListener("click", function () {
+    localStorage.setItem("custombg", bginput.value);
     location.reload();
   });
 }
