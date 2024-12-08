@@ -20,7 +20,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: var(--secondary);
+    background: var(--primary);
 }
 
 /* Handle */
@@ -307,6 +307,9 @@ body {
     color: var(--primary);
 }
 
+#icons {
+    margin-left: -5px;
+}
 
 .nav {
     background-color: var(--primary);
@@ -325,8 +328,8 @@ body {
 
 #home {
     margin-right: 5px;
-    margin-top: -280px;
-    margin-bottom: 150px;
+    position: fixed;
+    margin-top: -640px;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     text-shadow: var(--accent) 0px 0px 10px;
@@ -343,8 +346,6 @@ body {
     margin-top: 5px;
     display: flex;
     background-color: none;
-    margin-left: -5px;
-    margin-top: 15px;
     border-radius: 10px;
 
 }
@@ -364,19 +365,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     translate: 35px 0px;
-}
-
-#cog,
-#chat,
-#controller,
-#texting {
-    max-width: 25px;
-    max-height: 25px;
-    display: block;
-    filter: brightness(0) invert(1) drop-shadow(0 0 10px var(--accent));
-    margin: auto;
-    /* Center horizontally */
-
 }
 
 #appslogo {
