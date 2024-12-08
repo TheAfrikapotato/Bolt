@@ -12,6 +12,30 @@
     /*URL to font*/
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    box-shadow: 0 0 10px var(--accent);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--secondary);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    box-shadow: 0 0 30px var(--accent);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
+
+
 #bg {
     position: fixed;
     width: 100%;

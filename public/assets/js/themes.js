@@ -22,13 +22,13 @@ window.addEventListener("DOMContentLoaded", function () {
         if (localStorage.getItem("custombg") == '') {
             document.getElementById("bg").setAttribute("src", "/assets/imgs/bg/twelve.jpg");
         }
-        document.documentElement.style.cssText = "    --primary: rgb(0, 0, 0);--secondary: rgb(74, 74, 74);--font: rgb(74, 74, 74)); --accent: rgb(40, 40, 40); ";
+        document.documentElement.style.cssText = "    --primary: rgb(0, 0, 0);--secondary: rgb(74, 74, 74); --font: rgb(74, 74, 74); --accent: rgb(40, 40, 40); ";
     }
     else if (localStorage.getItem("theme") == "dusk") {
         if (localStorage.getItem("custombg") == '') {
             document.getElementById("bg").setAttribute("src", "/assets/imgs/bg/dusk.png");
         }
-        document.documentElement.style.cssText = "    --primary: rgb(0, 0, 0);--secondary: rgb(255, 202, 171); --font: rgb(255, 246, 238); --accent: rgb(255, 113, 62); ";
+        document.documentElement.style.cssText = "    --primary: rgb(0, 0, 0);--secondary: rgb(255, 202, 171); --font: rgb(255, 206, 171); --accent: rgb(255, 113, 62); ";
     }
     else if (localStorage.getItem("theme") == "flourishing") {
         if (localStorage.getItem("custombg") == '') {
