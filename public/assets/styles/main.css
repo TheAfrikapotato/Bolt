@@ -329,7 +329,7 @@ body {
 #home {
     margin-right: 5px;
     position: fixed;
-    margin-top: -640px;
+    top: -5vh;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     text-shadow: var(--accent) 0px 0px 10px;
