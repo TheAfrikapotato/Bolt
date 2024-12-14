@@ -4,7 +4,7 @@
   </b>
 </h1>
 <p>
-  Bolt uses <a href="https://github.com/titaniumnetwork-dev/Ultraviolet">Ultraviolet</a>, a proxy backend provided from Titanium Network. Ultraviolet v3 is a fast proxy service, but it's sucessor, <a href="https://github.com/MercuryWorkshop/scramjet">Scramjet</a>, is in the works. Bolt also uses Scramjet, but will default to Ultraviolet because Scramjet is not ready for production yet.
+  Bolt uses <a href="https://github.com/titaniumnetwork-dev/Ultraviolet">Ultraviolet</a>, a proxy backend provided from Titanium Network. Ultraviolet v3 is a fast proxy service, but it's successor, <a href="https://github.com/MercuryWorkshop/scramjet">Scramjet</a>, is in the works. Bolt also uses Scramjet, but will default to Ultraviolet because Scramjet is not ready for production yet.
   
   Bolt also uses <a href="https://github.com/binary-person/rammerhead">Rammerhead</a>,  a proxy service that is balanced between speed and site support.
 </p>
@@ -73,5 +73,5 @@
   pnpm start
   ```
   
-  You should have a local Bolt on <b>localhost:8080</b>!
+  You should have Bolt running locally on <b>localhost:8080</b>!
 </p>
