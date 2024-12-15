@@ -5,7 +5,7 @@ import { epoxyPath } from "@mercuryworkshop/epoxy-transport";
 import { baremuxPath } from "@mercuryworkshop/bare-mux/node";
 import { join } from "node:path";
 import { hostname } from "node:os";
-import wisp from "wisp-server-node";
+import { server as wisp } from "@mercuryworkshop/wisp-js/server";
 
 
 
@@ -34,17 +34,12 @@ server.on("request", (req, res) => {
 });
 
 server.on("upgrade", (req, socket, head) => {
-    if (req.url.endsWith("/wisp/")) {
-        wisp.routeRequest(req, socket, head)
-    }
-    else {
-        socket.end()
-    }
+    wisp.routeRequest(req, socket, head);
 });
 
-let port = parseInt(process.env.PORT || "8080");
+let port = parseInt(process.env.PORT || "6969");
 
-if (isNaN(port)) port = 8080;
+if (isNaN(port)) port = 6969;
 
 server.on("listening", () => {
     const address = server.address();

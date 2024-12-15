@@ -7,6 +7,7 @@ var input = document.getElementById("input");
 async function init() {
     try {
         const connection = new BareMux.BareMuxConnection("/baremux/worker.js");
+        //grrr
 
         let wispUrl = (location.protocol === "https:" ? "wss" : "ws") + "://" + location.host + "/wisp/";
 
