@@ -63,7 +63,6 @@
   This is a Node JS application with npm packages. You must first run:
   
   ```bash
-  npm i
   pnpm i
   ```
   <br>
