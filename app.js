@@ -37,9 +37,9 @@ server.on("upgrade", (req, socket, head) => {
     wisp.routeRequest(req, socket, head);
 });
 
-let port = parseInt(process.env.PORT || "6969");
+let port = parseInt(process.env.PORT || "8080");
 
-if (isNaN(port)) port = 6969;
+if (isNaN(port)) port = 8080;
 
 server.on("listening", () => {
     const address = server.address();
