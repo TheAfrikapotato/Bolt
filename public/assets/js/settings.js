@@ -10,6 +10,7 @@ var etab = document.getElementById("etab");
 var themeselect = document.getElementById("theme-select");
 var bginput = document.getElementById("bginput");
 var bgset = document.getElementById("bgset");
+var loadselect = document.getElementById("load-select");
 
 if (ptab && ttab && etab) {
   checkTabs();
@@ -32,6 +33,7 @@ if (ptab && ttab && etab) {
     cloaking.hidden = true;
     cheats.hidden = true;
     themes.hidden = true;
+    load.hidden = true;
     cbg.style.display = "none";
     if (tab == 0) {
       ptab.classList.add("active");
@@ -39,6 +41,7 @@ if (ptab && ttab && etab) {
       etab.classList.remove("active");
       proxy.hidden = false;
       wisp.hidden = false;
+      load.hidden = false;
     } else if (tab == 1) {
       ttab.classList.add("active");
       ptab.classList.remove("active");
@@ -147,5 +150,12 @@ if (bginput && bgset) {
   bgset.addEventListener("click", function () {
     localStorage.setItem("custombg", bginput.value);
     location.reload();
+  });
+}
+
+if (load) {
+  loadselect.value = localStorage.getItem("load") || "fancy";
+  loadselect.addEventListener("change", function () {
+    localStorage.setItem("load", loadselect.value);
   });
 }
