@@ -11,15 +11,15 @@ async function init() {
         const scramjet = new ScramjetController({
             prefix: "/scram/service/",
             files: {
-                wasm: "/scram/scramjet.wasm.js",
-                worker: "/scram/scramjet.worker.js",
-                client: "/scram/scramjet.client.js",
-                shared: "/scram/scramjet.shared.js",
-                sync: "/scram/scramjet.sync.js"
+                wasm: "/scram/wasm.js",
+                worker: "/scram/worker.js",
+                client: "/scram/client.js",
+                shared: "/scram/shared.js",
+                sync: "/scram/sync.js"
             },
         });
         window.sj = scramjet;
-        scramjet.init("/scram/scramjet.sw.js");
+        scramjet.init("/sw.js");
 
 
     } catch (error) {

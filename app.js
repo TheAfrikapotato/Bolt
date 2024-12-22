@@ -1,6 +1,5 @@
 import express from "express";
 import { createServer } from "node:http";
-import { uvPath } from "@titaniumnetwork-dev/ultraviolet";
 import { epoxyPath } from "@mercuryworkshop/epoxy-transport";
 import { baremuxPath } from "@mercuryworkshop/bare-mux/node";
 import { join } from "node:path";
@@ -14,8 +13,6 @@ const app = express();
 
 const publicPath = join(__dirname, "public");
 app.use(express.static(publicPath));
-
-app.use("/uv/", express.static(uvPath));
 app.use("/epoxy/", express.static(epoxyPath));
 app.use("/baremux/", express.static(baremuxPath));
 
