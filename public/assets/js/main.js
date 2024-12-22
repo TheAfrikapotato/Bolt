@@ -18,11 +18,11 @@ async function init() {
         const scramjet = new ScramjetController({
             prefix: "/scram/service/",
             files: {
-                wasm: "/scram/wasm.js",
-                worker: "/scram/worker.js",
-                client: "/scram/client.js",
-                shared: "/scram/shared.js",
-                sync: "/scram/sync.js"
+                wasm: "/scram/scramjet.wasm.js",
+                worker: "/scram/scramjet.worker.js",
+                client: "/scram/scramjet.client.js",
+                shared: "/scram/scramjet.shared.js",
+                sync: "/scram/scramjet.sync.js"
             },
         });
         window.sj = scramjet;
@@ -37,7 +37,7 @@ async function init() {
     }
 
     try {
-       await navigator.serviceWorker.register("/sw.js");
+        await navigator.serviceWorker.register("/sw.js");
         console.log("Registering service worker...");
     } catch (err) {
         throw new Error(err)
@@ -68,11 +68,11 @@ if (form && input) {
 
         try {
             await navigator.serviceWorker.register("/sw.js");
-             console.log("Registering service worker...");
-         } catch (err) {
-             throw new Error(err)
-         }
-         
+            console.log("Registering service worker...");
+        } catch (err) {
+            throw new Error(err)
+        }
+
         var url = input.value;
 
         if (!isUrl(url)) {
