@@ -18,7 +18,6 @@ app.use("/baremux/", express.static(baremuxPath));
 
 const server = createServer();
 
-
 app.use((req, res) => {
     res.status(404);
     res.sendFile(join(publicPath, "index.html"));
