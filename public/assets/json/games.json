@@ -20,6 +20,11 @@
         "url": "https://www.diep.io"
     },
     {
+        "name": "DigDig.io",
+        "image": "https://kevin.games/assets/images/index/digdig-io.jpg",
+        "url": "https://digdig.io/"
+    },
+    {
         "name": "Subway Surfers",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGgn5S0nmUQTaTXR0W-k8nQbApIXNOIQ2j4KQaVgIT-7MD-m6MHUzoxChfeNcrLaETjFYp",
         "url": "https://szhong.4399.com/4399swf//upload_swf/ftp35/liuxinyu/20210324/jj01/index.html"
@@ -30,9 +35,54 @@
         "url": "https://www.kour.io"
     },
     {
+        "name": "Space Company",
+        "image": "https://sparticle999.github.io/SpaceCompany/whiteLogo.png",
+        "url": "https://sparticle999.github.io/SpaceCompany/"
+    },
+    {
+        "name": "Block Blast",
+        "image": "https://play-lh.googleusercontent.com/R0qgNDYYHbRhw6JFsdEbDMqONplEvJx0m0W9wzYVvY3eNF1c2rfBWYjQxW0sLEzFe1E",
+        "url": "https://reunbozdo.github.io/"
+    },
+    {
+        "name": "Gladihoppers",
+        "image": "https://girlgames88.com/uploads/2022/11/gladihoppers-logo.png",
+        "url": "https://55gms.com/misc/gladihoppers/"
+    },
+    {
+        "name": "Karlson't",
+        "image": "https://www.gamenora.com/upload/games/thumbnails/Karlson.webp",
+        "url": "https: //jankiestgame.netlify.app/"
+    },
+    {
+        "name": "GeoGuessr",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZus44GbLGe3ivveQmuMkkGtOVF8m0IEvyoQ&s",
+        "url": "https://www.worldguessr.com/"
+    },
+    {
+        "name": "Astro Survivors",
+        "image": "https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/2110f2f63310c5adedb0b240fed3bc34.png",
+        "url": "https://thepizzaedition.github.io/assets/allgames/astrosurvivor/"
+    },
+    {
+        "name": "Dadish",
+        "image": "https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/6bb56bc01338e59c549454759281f4bf.jpeg",
+        "url": "https://monkeygg2.github.io/games/dadish/"
+    },
+    {
         "name": "Minecraft 1.8.8",
         "image": "https://feedback.minecraft.net/hc/theming_assets/01HZH4GFS6HZFCFWQPVZT51JSB",
         "url": "https://eaglercraft.com/mc/1.8.8/"
+    },
+    {
+        "name": "Minecraft 1.20",
+        "image": "https://feedback.minecraft.net/hc/theming_assets/01HZH4GFS6HZFCFWQPVZT51JSB",
+        "url": "https://client.eaglercraft.win/eagler-files/modded/1.8/EaglyMC/index.html"
+    },
+    {
+        "name": "Prism Client",
+        "image": "https://feedback.minecraft.net/hc/theming_assets/01HZH4GFS6HZFCFWQPVZT51JSB",
+        "url": "https://client.eaglercraft.win/eagler-files/modded/1.8/prism-client.html"
     },
     {
         "name": "Precision Client",

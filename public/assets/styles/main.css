@@ -308,7 +308,7 @@ body {
 }
 
 #icons {
-    margin-left: -5px;
+    margin-left: 0px;
 }
 
 .nav {
@@ -348,7 +348,7 @@ body {
     display: flex;
     background-color: none;
     border-radius: 10px;
-
+    margin-left: -2px;
 }
 
 #link:hover {
