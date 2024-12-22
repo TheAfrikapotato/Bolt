@@ -1,25 +1,31 @@
-"use strict";
+importScripts('/uv/bundle.js');
+importScripts('/uv/config.js');
+importScripts('/uv/sw.js');
+importScripts("/scram/wasm.js", "/scram/shared.js", "/scram/worker.js");
 
+const uv = new UVServiceWorker();
+const scramjet = new ScramjetServiceWorker();
 
-const stockSW = "/uv/sw.js";
+let playgroundData;
 
-const swAllowedHostnames = ["localhost", "127.0.0.1"];
-registerSW();
-
-async function registerSW() {
-    if (!navigator.serviceWorker) {
-        if (
-            location.protocol !== "https:" &&
-            !swAllowedHostnames.includes(location.hostname)
-        )
-            throw new Error("Service workers cannot be registered without https.");
-
-        throw new Error("Your browser doesn't support service workers.");
+self.addEventListener("message", ({ data }) => {
+    if (data.type === "playgroundData") {
+        playgroundData = data;
     }
-    else {
-        console.log("Service worker registered.");
+});
+
+async function handleRequest(event) {
+    if (uv.route(event)) {
+        return await uv.fetch(event);
     }
 
-    await navigator.serviceWorker.register(stockSW);
-
+    await scramjet.loadConfig();
+    if (scramjet.route(event)) {
+        return await scramjet.fetch(event);
+    }
+    return await fetch(event.request);
 }
+
+self.addEventListener("fetch", (event) => {
+    event.respondWith(handleRequest(event));
+});
