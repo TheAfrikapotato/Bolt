@@ -32,6 +32,10 @@ app.get("/settings", (req, res) => {
     res.sendFile(join(publicPath, "settings.html"));
 });
 
+app.get("/browser", (req, res) => {
+    res.sendFile(join(publicPath, "browser.html"));
+});
+
 app.get("/", (req, res) => {
     res.sendFile(join(publicPath, "index.html"));
 });
